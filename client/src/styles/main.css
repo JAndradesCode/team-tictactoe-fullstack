@@ -54,7 +54,7 @@ body {
 .game-container h1 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #7405f7;
+  color: #2de2e6;
 }
 
 .game-status {
@@ -100,12 +100,12 @@ body {
 }
 
 .cell:hover:not(:disabled) {
-  background: #261447;
+  background: #5d26c2;
   transform: scale(1.05);
 }
 
 .cell.filled {
-  background: #261447;
+  background: #5d26c2;
   color: #ffffff;
 }
 
@@ -212,7 +212,7 @@ body {
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #2e2157;
+  background: #5d26c2;
 }
 
 /* Player Info */
@@ -226,12 +226,12 @@ body {
 
 .player-info p {
   margin: 0.25rem 0;
-  color: #ff6c11;
+  color: #2de2e6;
 }
 
 .player-info .stats {
   font-weight: bold;
-  color: #18276c;
+  color: #2de2e6;
   font-size: 0.9rem;
 }
 
@@ -244,13 +244,13 @@ body {
 }
 
 .leaderboard p {
-  color: #f9c80e;
+  color: #2de2e6;
 }
 
 .leaderboard h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  color:white;
 }
 
 .leaderboard.loading,
