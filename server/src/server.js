@@ -46,6 +46,7 @@ app.get("/", (req, res) => {
 
 // PLAYER ROUTES
 
+//create player
 app.post("/api/players", (req, res) => {
   try {
     const { name } = req.body;
@@ -80,6 +81,7 @@ app.post("/api/players", (req, res) => {
 });
 
 
+//get players
 app.get("/api/players", (req, res) => {
   try {
     const players = getAllPlayers();
@@ -98,6 +100,7 @@ app.get("/api/players", (req, res) => {
 });
 
 
+//get player by id
 app.get("/api/players/:id", (req, res) => {
   try {
     const player = getPlayer(req.params.id);
@@ -122,6 +125,8 @@ app.get("/api/players/:id", (req, res) => {
   }
 });
 
+
+//update player stats after game
 
 app.post("/api/players/:id/stats", (req, res) => {
   try {
@@ -158,6 +163,7 @@ app.post("/api/players/:id/stats", (req, res) => {
 });
 
 
+//get top players by wins, then alphabetical
 app.get("/api/leaderboard", (req, res) => {
   try {
     const limit = parseInt(req.query.limit) || 10;
@@ -177,6 +183,8 @@ app.get("/api/leaderboard", (req, res) => {
   }
 });
 
+
+//get player by name
 
 app.get("/api/players/name/:name", (req, res) => {
   try {
